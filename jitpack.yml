@@ -1,0 +1,8 @@
+jdk:
+  - openjdk17
+before_install:
+  - echo "Downloading JDK"
+  - sdk install java 17.0.7.7.1-amzn
+  - sdk use java 17.0.7.7.1-amzn
+  - echo "Finish Download JDK"
+  - ./gradlew ads:base:publishToMavenLocal
