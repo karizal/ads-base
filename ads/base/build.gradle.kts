@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("maven-publish")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -53,7 +54,7 @@ afterEvaluate {
 
                 groupId = "com.github.karizal"
                 artifactId = "ads_base"
-                version = "1.0.0"
+                version = "1.0.0-r2"
             }
         }
     }
