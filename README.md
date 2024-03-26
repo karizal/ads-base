@@ -12,7 +12,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.karizal:ads-base:1.0.0-r2'
+    implementation 'com.github.karizal:ads-base:1.0.1'
 }
 ```
 
