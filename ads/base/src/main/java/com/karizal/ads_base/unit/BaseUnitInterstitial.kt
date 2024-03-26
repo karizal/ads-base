@@ -76,8 +76,16 @@ class BaseUnitInterstitial(
                 channels.find { it.name == AdsBaseConst.admob }
             }
 
+            AdsBaseConst.fans -> {
+                channels.find { it.name == AdsBaseConst.fans }
+            }
+
             AdsBaseConst.applovin -> {
                 channels.find { it.name == AdsBaseConst.applovin }
+            }
+
+            AdsBaseConst.appodeal -> {
+                channels.find { it.name == AdsBaseConst.appodeal }
             }
 
             AdsBaseConst.unity -> {

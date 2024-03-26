@@ -10,8 +10,8 @@ import com.karizal.ads_base.AdsBaseConst
 import com.karizal.ads_base.contract.BannerContract
 import com.karizal.ads_base.databinding.BaseUnitBannerBinding
 
-class BaseUnitBanner(
-    private val channels: Array<out BannerContract>,
+class BaseUnitBanner @JvmOverloads constructor(
+    private val channels: Array<out BannerContract> = arrayOf(),
 ) : Fragment() {
 
     private var forceAdsChannel: String? = null
@@ -51,8 +51,16 @@ class BaseUnitBanner(
                     channels.find { it.name == AdsBaseConst.admob }
                 }
 
+                AdsBaseConst.fans -> {
+                    channels.find { it.name == AdsBaseConst.fans }
+                }
+
                 AdsBaseConst.applovin -> {
                     channels.find { it.name == AdsBaseConst.applovin }
+                }
+
+                AdsBaseConst.appodeal -> {
+                    channels.find { it.name == AdsBaseConst.appodeal }
                 }
 
                 AdsBaseConst.unity -> {
@@ -84,8 +92,16 @@ class BaseUnitBanner(
                 channels.find { it.name == AdsBaseConst.admob }
             }
 
+            AdsBaseConst.fans -> {
+                channels.find { it.name == AdsBaseConst.fans }
+            }
+
             AdsBaseConst.applovin -> {
                 channels.find { it.name == AdsBaseConst.applovin }
+            }
+
+            AdsBaseConst.appodeal -> {
+                channels.find { it.name == AdsBaseConst.appodeal }
             }
 
             AdsBaseConst.unity -> {

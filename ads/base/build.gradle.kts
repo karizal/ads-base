@@ -54,7 +54,7 @@ afterEvaluate {
 
                 groupId = "com.github.karizal"
                 artifactId = "ads_base"
-                version = "1.0.0-r2"
+                version = "1.0.1"
             }
         }
     }
